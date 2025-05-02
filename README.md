@@ -22,7 +22,7 @@ See docker-compose.yml or run:
 ```bash
 # Create commands.yml first
 # Run Mock Server:
-docker run --rm -p 5050:5050 -v ./commands.yml:/usr/src/app/commands.yml ghcr.io/danielhabenicht/mock-ssh:0.2.2
+docker run --rm -p 5050:5050 -v ./commands.yml:/usr/src/app/commands.yml ghcr.io/danielhabenicht/mock-ssh:0.3.1
 # Try it out
 ssh localhost -p 5050
 exec echo Hello World!
@@ -70,3 +70,11 @@ commands:
 ## Thanks
 
 This was initally a fork of [https://github.com/d1618033/fake-ssh](https://github.com/d1618033/fake-ssh). Thanks [David](https://github.com/d1618033) for your work!
+
+## Development
+
+```bash
+eval $(poetry env activate)
+poetry run ssh-mock
+ssh -p 5050 localhost
+```
