@@ -74,6 +74,7 @@ This was initally a fork of [https://github.com/d1618033/fake-ssh](https://githu
 ## Development
 
 ```bash
+eval $(poetry env activate)
 poetry run ssh-mock
 ssh -p 5050 localhost
 ```

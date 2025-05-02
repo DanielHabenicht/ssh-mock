@@ -9,7 +9,7 @@
 		"ghcr.io/devcontainers-contrib/features/poetry:2": {},
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
 	},
-	"postCreateCommand": "poetry self add poetry-plugin-shell && poetry install",
+	"postCreateCommand": "poetry install",
 	"customizations": {
 		"vscode": {
 			"extensions": [
