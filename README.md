@@ -70,3 +70,10 @@ commands:
 ## Thanks
 
 This was initally a fork of [https://github.com/d1618033/fake-ssh](https://github.com/d1618033/fake-ssh). Thanks [David](https://github.com/d1618033) for your work!
+
+## Development
+
+```bash
+poetry run ssh-mock
+ssh -p 5050 localhost
+```
